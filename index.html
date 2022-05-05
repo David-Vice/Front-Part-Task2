@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Get Students -->
+    <ul id="students"></ul>
+    <button onclick="FillList()">Fill</button>
+    <!-- Get Students End -->
+    <br>
+    <!-- Get Student -->
+    <label id="resultStudent"></label>
+    <br>
+    <form onsubmit="FillStudent(); return false;">  <!-- It works! -->
+        <input type="number" name="Index" id="index">
+        <br>
+        <input type="submit" name="submit" value="Get">
+    </form>
+    <!-- Get Student End -->
+    <br>
+    <!-- Delete Student -->
+    <label id="resultDelete"></label>
+    <br>
+    <form onsubmit="DeleteStudent(); return false;">  <!-- It works! -->
+        <input type="number" name="IndexDelete" id="indexDelete">
+        <br>
+        <input type="submit" name="submit" value="Delete">
+    </form>
+    <!-- Delete Student End -->
+    <br>
+    <!-- Add Student -->
+    <label id="result"></label>
+    <br>
+    <form onsubmit="AddStudent(); return false;"> <!-- It works! -->
+        <input type="text" name="Name" id="name">
+        <br>
+        <input type="text" name="LastName" id="lastName">
+        <br>
+        <input type="date" name="Bday" id="bday">
+        <br>
+        <input type="number" name="Group" id="group">
+        <br>
+        <input type="submit" name="submit" value="Add">
+    </form>
+    <!-- Add Student End -->
+    <br>
+    <!-- Edit Student -->
+    <label id="resultEdit"></label>
+    <br>
+    <form onsubmit="EditStudent(); return false;">  <!-- It works! -->
+        <input type="number" name="IndexEdit" id="indexEdit">
+        <br>
+        <input type="text" name="Name" id="nameEdit">
+        <br>
+        <input type="text" name="LastName" id="lastNameEdit">
+        <br>
+        <input type="date" name="Bday" id="bdayEdit">
+        <br>
+        <input type="number" name="Group" id="groupEdit">
+        <br>
+        <input type="submit" name="submit" value="Edit">
+    </form>
+    <!-- Edit Student End -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
